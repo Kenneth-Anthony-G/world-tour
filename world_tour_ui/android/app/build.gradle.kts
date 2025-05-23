@@ -37,6 +37,17 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+    applicationVariants.all {
+        outputs.all {
+            val outputImpl = this as com.android.build.gradle.internal.api.BaseVariantOutputImpl
+            val appName = "WorldTour"
+            val apkName = "$appName.apk"
+            outputImpl.outputFileName = apkName
+        }
+    }
+
+
+
 }
 
 flutter {
