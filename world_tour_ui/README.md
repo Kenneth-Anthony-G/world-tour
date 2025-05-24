@@ -4,20 +4,14 @@
 It features a minimalist and modern user interface that simulates a travel or world tour browsing experience.
 
 ---
+## 🎥 Preview & 📸 Screenshots
 
-## 🎥 Preview
+<div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
+  <img src="assets/screenshots/preview.gif" alt="Preview" height="300"/>
+  <img src="assets/screenshots/home.png" alt="Home" height="300"/>
+  <img src="assets/screenshots/detail.png" alt="Details" height="300"/>
+</div>
 
-![Coffee Shop Preview](assets/screenshots/preview.gif)
-
----
-
-## 📸 Screenshots
-
-| Home | Details |
-|------------|-----------------|
-| ![Home](assets/screenshots/home.png) | ![Details](assets/screenshots/detail.png) |
-
----
 
 ## ✨ Features
 
