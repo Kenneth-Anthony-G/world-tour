@@ -40,7 +40,7 @@ class DetailScreen extends StatelessWidget {
                 Expanded(
                   child: Text(
                     country.officialName,
-                    style: AppText.xl,
+                    style: AppText.large,
                     overflow: TextOverflow.ellipsis,
                   ),
                 ),
@@ -106,7 +106,7 @@ class DetailScreen extends StatelessWidget {
           ),
           Text(
             title,
-            style: AppText.large.copyWith(fontWeight: FontWeight.bold),
+            style: AppText.medium.copyWith(fontWeight: FontWeight.bold),
           ),
           const SizedBox(width: 10),
           Expanded(

@@ -13,7 +13,7 @@ class CountryService {
       final List data = response.data;
       return data.map((e) => Country.fromJson(e)).toList();
     } catch (e) {
-      throw Exception('Failed to load countries: $e');
+      throw Exception('Connection error, please try again.');
     }
   }
 }

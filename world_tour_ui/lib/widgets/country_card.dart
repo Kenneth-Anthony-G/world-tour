@@ -25,7 +25,7 @@ class CountryCard extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.all(8),
         padding: EdgeInsets.all(8),
-        height: 60,
+        height: 70,
         child: Row(
           children: [
             ClipRRect(
