@@ -5,8 +5,6 @@ class HttpService {
 
   HttpService(): dio = Dio(
     BaseOptions(baseUrl: 'https://restcountries.com/v3.1/',
-      connectTimeout: Duration(milliseconds: 20000),
-      receiveTimeout: Duration(milliseconds: 20000),
       headers: {
         'Accept': 'application/json',
       },

@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:world_tour/models/country.dart';
 import 'package:world_tour/models/country.dart';
 import 'package:world_tour/screens/detail_screen.dart';
+import 'package:world_tour/theme/app_text.dart';
 
 import '../services/country_service.dart';
 import '../services/http_service.dart';
+import '../widgets/country_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -73,12 +75,21 @@ class HomeScreen extends StatefulWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: TextField(
-                  controller: _searchController,
-                  decoration: const InputDecoration(
-                    labelText: 'Search by name',
-                    border: OutlineInputBorder(),
-                    prefixIcon: Icon(Icons.search),
+                child: Material(
+                  elevation: 1,
+                  borderRadius: BorderRadius.circular(10),
+                  child: TextField(
+                    controller: _searchController,
+                    decoration: InputDecoration(
+                      fillColor: Colors.grey.shade300,
+                      filled: true,
+                      labelText: 'Search by name',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide.none,
+                      ),
+                      prefixIcon: Icon(Icons.search),
+                    ),
                   ),
                 ),
               ),
@@ -89,19 +100,7 @@ class HomeScreen extends StatefulWidget {
                   itemCount: _filteredCountries.length,
                   itemBuilder: (context, index) {
                     final country = _filteredCountries[index];
-                    return ListTile(
-                      title: Text(country.officialName),
-                      subtitle: Text('Capital: ${country.capital}, Lang: ${country.language}'),
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => DetailScreen(country: country),
-                          ),
-                        );
-                      },
-                    );
-
+                    return CountryCard(country: country);
                   },
                 ),
               ),
