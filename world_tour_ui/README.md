@@ -5,10 +5,17 @@ It features a minimalist and modern user interface that simulates a travel or wo
 
 ---
 
-## 📌 Purpose
+## 🎥 Preview
 
-This project was developed as a personal training exercise.  
-The goal is to strengthen my Flutter UI design capabilities by creating a complete, clean, and interactive layout without relying on external UI templates.
+![Coffee Shop Preview](assets/screenshots/preview.gif)
+
+---
+
+## 📸 Screenshots
+
+| Home | Details |
+|------------|-----------------|
+| ![Home](assets/screenshots/home.png) | ![Details](assets/screenshots/detail.png) |
 
 ---
 
