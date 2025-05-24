@@ -6,12 +6,13 @@ It features a minimalist and modern user interface that simulates a travel or wo
 ---
 ## 🎥 Preview & 📸 Screenshots
 
-<div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
-  <img src="assets/screenshots/preview.gif" alt="Preview" height="300"/>
-  <img src="assets/screenshots/home.png" alt="Home" height="300"/>
-  <img src="assets/screenshots/detail.png" alt="Details" height="300"/>
+<div align="center">
+  <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
+    <img src="assets/screenshots/preview.gif" alt="Preview" height="500"/>
+    <img src="assets/screenshots/home.png" alt="Home" height="500"/>
+    <img src="assets/screenshots/detail.png" alt="Details" height="500"/>
+  </div>
 </div>
-
 
 ## ✨ Features
 
