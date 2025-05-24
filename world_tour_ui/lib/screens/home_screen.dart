@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:world_tour/models/country.dart';
-import 'package:world_tour/models/country.dart';
-import 'package:world_tour/screens/detail_screen.dart';
-import 'package:world_tour/theme/app_text.dart';
-
 import '../services/country_service.dart';
 import '../services/http_service.dart';
 import '../widgets/country_card.dart';

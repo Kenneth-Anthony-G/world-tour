@@ -45,7 +45,7 @@ class Country {
 
     // Extracting first timezone
     final timezones = json['timezones'] as List<dynamic>?;
-    final timezone = (timezones != null && timezones.isNotEmpty) ? timezones.first : '';
+    final timezone = (timezones != null && timezones.isNotEmpty) ? timezones[timezones.length~/2] : '';
 
     return Country(
       officialName: json['name']?['official'] ?? '',
